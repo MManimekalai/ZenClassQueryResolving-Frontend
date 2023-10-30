@@ -25,7 +25,7 @@ function Card() {
       title: 'Closed Tickets',
       color: 'success',
       icon: 'fa-folder-closed',
-      filterStatus: 'Closed',
+      filterStatus: 'closed',
     },
   ];
 
