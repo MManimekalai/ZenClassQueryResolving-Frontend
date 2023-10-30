@@ -1,0 +1,153 @@
+/* General Styles */
+.student-dashboard-container {
+  display: flex;
+  height: 100vh;
+  padding: 16px;
+}
+
+.ticket-list {
+  flex: 1;
+  border: 1px solid #ccc;
+  overflow-y: auto;
+  
+}
+
+.ticket-details {
+  flex: 0.4;
+  border: 1px solid #ccc;
+  overflow-y: auto;
+}
+
+.ticket-item {
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  margin: 5px 0;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.ticket-item:hover {
+  background-color: #f3f3f3;
+}
+
+.ticket-item.selected {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* Ticket Status Styles */
+.status {
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.status.closed {
+  background-color: #d6ffe4; /* Green for closed tickets */
+  color: #06aa44;
+}
+
+.status.assigned {
+  background-color: #f6e9cf; /* Amber for assigned tickets */
+  color: #f3a90a;
+}
+
+.status.open {
+  background-color: #f7b1b1; /* Red for open tickets */
+  color: #ff0000;
+}
+
+/* Ticket Details Styles */
+.ticket-info {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 10px;
+}
+
+.ticket-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  font-weight: bold;
+  color: #191cf8;
+}
+
+.ticket-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  color: #777;
+}
+
+.centered {
+  text-align: center;
+  font-weight: bold;
+}
+
+.align-start {
+  text-align: start;
+  width: 30%;
+  font-weight: bold;
+}
+
+.align-start p{
+  font-weight: lighter;
+}
+
+.align-end {
+  text-align: end;
+  width: 50%;
+  font-weight: bold;
+}
+
+.align-end p{
+  font-weight: lighter;
+}
+
+.description {
+  text-align: left;
+  padding: 10px;
+  color: #333;
+  font-weight: bold;
+}
+
+.description p {
+  text-align: left;
+  font-weight: lighter;
+}
+
+
+/* Styles for No tickets container */
+.no-tickets {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  position: relative;
+}
+
+.no-tickets p {
+  background-color: #ffffff46; /* Set your desired background color */
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-size: 18px;
+  font-weight: bolder;
+  color: #777;
+  position: relative;
+  z-index: 1;
+}
+
+/* Placeholder styles remain the same */
+.placeholder {
+  text-align: center;
+  padding: 20px;
+  font-size: 18px;
+  color: #777;
+}

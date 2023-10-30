@@ -1,0 +1,11 @@
+body {
+  margin: 0;
+  font-family: "DM Sans",sans-serif;
+  text-align: left;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
